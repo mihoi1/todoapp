@@ -20,16 +20,13 @@ public class Category {
     @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Task> tasks;
 
-    // Constructor Implicit (Necesar de JPA)
     public Category() {}
 
-    // Constructor pentru creare
     public Category(String name, String colorCode) {
         this.name = name;
         this.colorCode = colorCode;
     }
 
-    // --- Getters și Setters ---
     public Long getId() { return id; }
     public void setId(Long id) { this.id = id; }
 

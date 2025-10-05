@@ -31,7 +31,7 @@ public class TaskService {
     }
 
     public List<Task> getTasksByCategoryId(Long categoryId) {
-        categoryService.getCategoryById(categoryId); // verifică existența
+        categoryService.getCategoryById(categoryId);
         return taskRepository.findByCategoryId(categoryId);
     }
 

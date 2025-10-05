@@ -1,6 +1,5 @@
 const apiBase = "/api";
 
-// --- CATEGORY ---
 async function createCategory() {
     const name = document.getElementById("categoryName").value;
     if (!name) return alert("Category name cannot be empty!");
@@ -35,7 +34,6 @@ async function loadCategories() {
     renderTaskTables(categories);
 }
 
-// --- TASK ---
 async function createTask() {
     const title = document.getElementById("taskTitle").value;
     const categoryId = parseInt(document.getElementById("taskCategory").value);
@@ -65,7 +63,6 @@ async function deleteTask(taskId) {
     loadCategories();
 }
 
-// --- RENDER TASK TABLES ---
 async function renderTaskTables(categories) {
     const container = document.getElementById("categoriesContainer");
     container.innerHTML = "";
@@ -107,5 +104,4 @@ async function renderTaskTables(categories) {
     }
 }
 
-// --- INIT ---
 window.onload = loadCategories;
