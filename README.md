@@ -1,4 +1,6 @@
-TodoApp is a simple web application for managing tasks, built with Spring Boot for the backend and HTML/CSS/JavaScript for the frontend. It allows creating categories, adding tasks to them, and marking tasks as Done or Pending.
+# ToDoApp
+
+ToDoApp is a simple web application for managing tasks, built with Spring Boot for the backend and HTML/CSS/JavaScript for the frontend. It allows creating categories, adding tasks to them, and marking tasks as Done or Pending.
 Tasks are displayed in separate tables per category for a clean and organized view.
 
 ## Features
